@@ -1,0 +1,13 @@
+---
+# tasks file for ansible-role-ubuntu
+- include: update.yml
+  tags: 
+    - install
+
+- include: samba.yml
+  tags: 
+    - install
+
+- include: display.yml
+  tags: 
+    - install

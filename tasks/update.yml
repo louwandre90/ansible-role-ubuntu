@@ -1,0 +1,11 @@
+---
+# Install tasks for ansible-role-ubuntu update
+- name: Do apt-get update 
+  apt: update_cache=yes 
+
+- name: Do apt-get upgrade 
+  #apt: upgrade=full #not working
+  command: apt-get upgrade -y
+
+
+
